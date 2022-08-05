@@ -1,4 +1,5 @@
 import Card from "components/Card";
+import MostPopular from "components/MostPopular";
 import React from "react";
 import {
   Grid,
@@ -37,6 +38,7 @@ const Home = () => {
           <HeadContainer>
             <HeadTitle>Most Popular</HeadTitle>
           </HeadContainer>
+          <MostPopular />
         </RightPartialContainer>
         <RightPartialContainer>
           <HeadContainer>

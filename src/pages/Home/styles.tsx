@@ -10,6 +10,7 @@ export const LeftContainer = styled.div`
   width: 69%;
   height: 40%;
   border: 1px solid ${(props) => props.theme.lightGrey};
+  padding-bottom: 1rem;
 `;
 
 export const HeadContainer = styled.div`
@@ -17,7 +18,8 @@ export const HeadContainer = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0 1.25rem;
+  padding-top: 0.15rem;
   background-color: ${(props) => props.theme.primary};
 `;
 
@@ -43,7 +45,8 @@ export const RightContainer = styled.div`
 `;
 
 export const RightPartialContainer = styled.div`
-  height: 5rem;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 2rem;
   border: 1px solid ${(props) => props.theme.lightGrey};
 `;
@@ -55,5 +58,11 @@ export const HeadTitle = styled.h2`
 `;
 
 export const Grid = styled.div`
+  padding: 0 1rem;
+  height: 50vh;
   display: grid;
+  grid-column-gap: 0.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  flex-direction: column;
+  height: 100%;
 `;

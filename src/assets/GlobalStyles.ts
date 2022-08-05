@@ -39,7 +39,10 @@ export const GlobalStyles = createGlobalStyle`
     overscroll-behavior-y: none;
     -webkit-overflow-scrolling: touch;
       background-color: #000;
-
+    overflow-x: hidden;
+       /* @media (max-width: 1080px) {
+    background-color: #1B1B1B;
+  } */
   }
 
  

@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.main`
   width: 1080px;
   background: ${(props) => props.theme.background};
-  max-height: 177.8vw;
   min-height: 100vh;
   margin: auto;
   position: relative;
