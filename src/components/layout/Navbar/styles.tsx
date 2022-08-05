@@ -6,6 +6,9 @@ export const Container = styled.section`
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 0;
+  @media (max-width: 1080px) {
+    padding: 0.5rem 0.5rem;
+  }
 `;
 
 export const LogoContainer = styled.div`
