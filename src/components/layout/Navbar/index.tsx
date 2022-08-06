@@ -1,5 +1,6 @@
 import { github, linkedin, logo, search, send } from "assets/images";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import {
   AuthContainer,
   AuthLink,
@@ -18,10 +19,12 @@ import {
 } from "./styles";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
   return (
     <Container>
       <LogoContainer>
-        <CenterLogo>
+        <CenterLogo onClick={() => navigate("")}>
           <Logo src={logo} />
           <LogoTitle>Weeb Nation</LogoTitle>
         </CenterLogo>
@@ -33,7 +36,8 @@ const Navbar = () => {
       </SocialContainer>
       <FunctionContainer>
         <AuthContainer>
-          <AuthLink to=''>Login</AuthLink> | <AuthLink to=''>Signup</AuthLink>
+          <AuthLink to='login'>Login</AuthLink> |{" "}
+          <AuthLink to=''>Signup</AuthLink>
         </AuthContainer>
         <SearchContainer>
           <SearchInput placeholder='Search...' />

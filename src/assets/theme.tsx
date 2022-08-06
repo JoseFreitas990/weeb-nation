@@ -7,6 +7,8 @@ export const theme = {
   white: "#fff",
   black: "#000",
 
+  primaryRgba: "202, 49, 29",
+
   fontxs: "0.75em",
   fontsm: "0.875em",
   fontmd: "1em", // 1em=16px

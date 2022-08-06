@@ -43,6 +43,8 @@ export const GlobalStyles = createGlobalStyle`
        /* @media (max-width: 1080px) {
     background-color: #1B1B1B;
   } */
+    scroll-behavior: smooth;
+
   }
 
  

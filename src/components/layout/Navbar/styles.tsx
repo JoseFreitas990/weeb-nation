@@ -6,6 +6,7 @@ export const Container = styled.section`
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 0;
+  margin-bottom: 1rem;
   @media (max-width: 1080px) {
     padding: 0.5rem 0.5rem;
   }
@@ -37,6 +38,7 @@ export const SocialContainer = styled.div`
 
 export const SocialIcon = styled.img`
   width: 1.5rem;
+  cursor: pointer;
   &:first-of-type {
     margin-right: 1rem;
   }
