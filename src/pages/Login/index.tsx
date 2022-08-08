@@ -65,7 +65,7 @@ const Login = () => {
       </Form>
       <MiniLinkContainer>
         <MiniLink to=''>Forgot password?</MiniLink>
-        <MiniLink to=''>Sign in</MiniLink>
+        <MiniLink to='/signup'>Sign Up</MiniLink>
       </MiniLinkContainer>
     </LoginContainer>
   );

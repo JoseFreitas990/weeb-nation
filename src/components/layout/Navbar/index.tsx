@@ -37,7 +37,7 @@ const Navbar = () => {
       <FunctionContainer>
         <AuthContainer>
           <AuthLink to='login'>Login</AuthLink> |{" "}
-          <AuthLink to=''>Signup</AuthLink>
+          <AuthLink to='signup'>Signup</AuthLink>
         </AuthContainer>
         <SearchContainer>
           <SearchInput placeholder='Search...' />
