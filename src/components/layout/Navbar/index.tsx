@@ -21,6 +21,7 @@ import {
 const Navbar = () => {
   const navigate = useNavigate();
 
+  const logged = true;
   return (
     <Container>
       <LogoContainer>
@@ -36,8 +37,17 @@ const Navbar = () => {
       </SocialContainer>
       <FunctionContainer>
         <AuthContainer>
-          <AuthLink to='login'>Login</AuthLink> |{" "}
-          <AuthLink to='signup'>Signup</AuthLink>
+          {logged ? (
+            <>
+              <AuthLink to='login'>My Profile</AuthLink>
+              <AuthLink to=''>Logout</AuthLink>
+            </>
+          ) : (
+            <>
+              <AuthLink to='login'>Login</AuthLink>
+              <AuthLink to='signup'>Signup</AuthLink>
+            </>
+          )}
         </AuthContainer>
         <SearchContainer>
           <SearchInput placeholder='Search...' />

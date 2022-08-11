@@ -1,6 +1,5 @@
 import Layout from "components";
-import { Home, Register } from "pages";
-import Login from "pages/Login";
+import { Details, Home, Login, Register } from "pages";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -12,6 +11,7 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='login' element={<Login />} />
             <Route path='signup' element={<Register />} />
+            <Route path='details' element={<Details />} />
           </Route>
         </Routes>
       </Router>

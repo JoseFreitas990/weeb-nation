@@ -1,15 +1,13 @@
 import Card from "components/Card";
+import Sidebar from "components/layout/Sidebar";
 import MostPopular from "components/MostPopular";
 import React from "react";
 import {
   Grid,
   HeadContainer,
   HeadLink,
-  HeadTitle,
   HomeContainer,
   LeftContainer,
-  RightContainer,
-  RightPartialContainer,
 } from "./styles";
 const data = [11, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 const Home = () => {
@@ -33,19 +31,7 @@ const Home = () => {
           })}
         </Grid>
       </LeftContainer>
-      <RightContainer>
-        <RightPartialContainer>
-          <HeadContainer>
-            <HeadTitle>Most Popular</HeadTitle>
-          </HeadContainer>
-          <MostPopular />
-        </RightPartialContainer>
-        <RightPartialContainer>
-          <HeadContainer>
-            <HeadTitle>Genres</HeadTitle>
-          </HeadContainer>
-        </RightPartialContainer>
-      </RightContainer>
+      <Sidebar />
     </HomeContainer>
   );
 };

@@ -38,24 +38,6 @@ export const HeadLink = styled(Link)`
     text-decoration: underline;
   }
 `;
-export const RightContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 29%;
-`;
-
-export const RightPartialContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2rem;
-  border: 1px solid ${(props) => props.theme.lightGrey};
-`;
-
-export const HeadTitle = styled.h2`
-  font-size: ${(props) => props.theme.fontlg};
-  font-weight: 300;
-  margin-right: 1rem;
-`;
 
 export const Grid = styled.div`
   padding: 0 1rem;
